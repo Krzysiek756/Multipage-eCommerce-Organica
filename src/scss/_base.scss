@@ -1,0 +1,113 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+img,
+span,
+input,
+label,
+button,
+ion-icon {
+    display: block;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}
+
+:focus-visible {
+    outline-offset: 4px;
+}
+
+::selection {
+    background-color: $black_50;
+    color: $white;
+}
+
+html {
+    font-size: 10px;
+    font-family: $ff-roboto;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $white;
+}
+
+
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container {
+    padding-inline: 15px;
+}
+
+
+.section {
+    padding-block: $section-padding;
+}
+
+.h2 {
+    font-size: $fs-1;
+    font-weight: $fw-500;
+    color: $russian-violet;
+}
+
+.h3 {
+    font-family: $ff-playfair-display;
+    font-size: $fs-4;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.has-scrollbar {
+    display: flex;
+    overflow-x: auto;
+    padding-block-end: 30px;
+    margin-block-end: -30px;
+    scroll-snap-type: inline mandatory;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+    height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: $black_25;
+}
