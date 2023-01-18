@@ -13,8 +13,27 @@
   </head>
   <body>
     <!--HEADER-->
-    <div class="lll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis molestias exercitationem molestiae deserunt nihil repellendus, quae officia explicabo libero officiis. Voluptatum commodi corrupti magnam obcaecati ut deserunt dicta aliquam ex, consectetur facere? Officiis, alias! Laboriosam laborum sed eveniet ipsa dolor? Inventore nam, ipsam et recusandae sapiente suscipit quod numquam magnam totam odit distinctio asperiores harum alias, unde incidunt a praesentium modi ab. Quasi inventore, sit aliquid, veniam minima amet incidunt rerum ipsam nulla vel consequatur pariatur iusto facilis maiores, reiciendis tempora expedita totam a hic eius? Libero dignissimos at molestias quis praesentium dolor natus, delectus sunt quos nulla rerum harum perferendis maxime fugit, ad incidunt a est doloribus voluptatum voluptas repellendus earum nesciunt totam. Reprehenderit recusandae ratione a excepturi? Tempore dolores sit recusandae ullam expedita obcaecati sequi accusamus veniam, rerum explicabo architecto commodi ipsam nihil velit, quos quia voluptas libero! Asperiores debitis enim aliquid ratione quibusdam? At porro sint ipsa, in, repudiandae fugiat incidunt architecto itaque quod, nostrum sequi nulla saepe. Libero cupiditate sed rem, non repellat quam quaerat dicta eveniet maiores, corporis fugiat enim, sit officiis eaque! Cupiditate, culpa voluptas placeat repellat reiciendis veniam officia perspiciatis unde rem nesciunt pariatur architecto qui ullam, animi doloribus magni ratione sequi nisi ipsum laboriosam aperiam vitae voluptate dicta. Commodi numquam accusantium odio error enim illum facere totam earum obcaecati! Dignissimos incidunt nulla ab eaque tenetur repudiandae eveniet quo aspernatur, deserunt fugit in ad. Mollitia tempora voluptatum, rem, aliquid fuga consectetur odit repellat rerum saepe quia eos perspiciatis laborum molestiae unde repellendus sed. Obcaecati est fuga voluptate magni quo doloremque velit a amet deserunt reiciendis atque cumque commodi earum quibusdam alias ea, sint illum ullam quidem, voluptas, asperiores ut eum maxime. Beatae quod id dolorum sit recusandae dicta quas repudiandae! Nam impedit, nesciunt facilis quos blanditiis in fuga sapiente enim? Similique incidunt nulla blanditiis voluptatibus id quo aliquam possimus velit rerum, veniam delectus ducimus, quibusdam hic, nam maiores quia quam! Iusto inventore ea vitae quam debitis delectus deserunt assumenda nihil nam obcaecati similique ad recusandae illum animi fuga, dolore dignissimos molestiae sit dicta ipsam hic reiciendis vel. Eum magnam, blanditiis non qui ratione distinctio. Deleniti amet exercitationem, deserunt ea iste eius optio, ex dolorum libero ipsa est asperiores aliquam repellat laudantium alias consectetur quae earum ut perspiciatis minus expedita! Molestias illo incidunt nesciunt, quia dicta reiciendis illum in corporis ratione, ipsam provident. Fuga est quisquam molestiae ad id pariatur similique impedit nesciunt, ullam perferendis sapiente necessitatibus dolore quaerat rerum sit accusantium tempora quibusdam nemo eius ratione illum magnam deleniti laborum unde! Cum repudiandae deserunt incidunt possimus, tempora, asperiores assumenda placeat nulla odit minus debitis amet illo architecto perferendis dolor. Enim voluptatibus officiis, obcaecati commodi consequuntur temporibus.</div>
-    <h2>aaa</h2>
+    <!--Preload-->
+    <div class="preload" data-preaload="">
+      <div class="preload__content"> 
+        <div class="cube" v-for="(cube,index) in cubeArrayOfObjct" :key="index"></div>
+      </div>
+    </div>
+    <!--Header-->
+    <header class="header">  
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-12 col-lg-12"> 
+            <div class="header__content"> 
+              <div class="header__logo"></div><span> {{headerTitle}}
+                <div class="menu"><img src="src/img/blog-1.jpg"><img :src="headerImg">
+                  <pre>{{headerImg}}</pre><a class="menu__item" v-for="(item, index) in menuArrayOfObjects" :href="item.link" :key="index">{{item.name}}</a>
+                </div></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!--SLIDER-->
     <!--CONTENT-->
     <div class="container">

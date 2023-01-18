@@ -1,0 +1,29 @@
+/*********************Preload*********************/
+/*********************Preload*********************/
+/*********************Preload*********************/
+$colorCube: #e9643b, #69beeb, #f5aa36, $emerald, pink;
+
+.preload {
+
+    &__content {
+
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        .cube {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+
+            @for $i from 1 through length($colorCube) {
+                &:nth-child(#{$i}) {
+                    background-color: nth($colorCube , $i);
+                }
+            }
+        }
+
+
+    }
+}
